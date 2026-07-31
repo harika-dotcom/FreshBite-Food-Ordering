@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout - FreshBite</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2>🍕 FreshBite</h2>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="cart.html">Cart</a></li>
+    </ul>
+</nav>
+
+<section class="checkout">
+
+<h1>Checkout</h1>
+
+<form id="checkoutForm">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="tel" placeholder="Mobile Number" required>
+
+<textarea placeholder="Delivery Address" required></textarea>
+
+<select required>
+<option value="">Select Payment</option>
+<option>Cash on Delivery</option>
+<option>UPI</option>
+<option>Credit / Debit Card</option>
+</select>
+
+<button type="submit">
+Place Order
+</button>
+
+</form>
+
+<div id="successMessage"></div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
