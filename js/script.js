@@ -494,6 +494,20 @@ margin:20px;
 margin:8px;
 
 }
+<button onclick="addToCart('Pizza', 299)">Add to Cart</button>
+<button onclick="addToCart('Burger', 199)">Add to Cart</button>
+function addToCart(name, price) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.push({
+        name: name,
+        price: price
+    });
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert(name + " added to cart!");
+}
 <section class="reviews">
 
 <h2>⭐ Customer Reviews</h2>
@@ -517,3 +531,5 @@ margin:8px;
 </div>
 
 </section>
+
+<script src="js/script.js"></script>
