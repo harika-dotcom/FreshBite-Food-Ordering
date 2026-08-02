@@ -532,4 +532,4 @@ function addToCart(name, price) {
 
 </section>
 
-<script src="js/script.js"></script>
+
